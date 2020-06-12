@@ -14,6 +14,7 @@ import org.junit.runner.RunWith;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 //@RunWith(Cucumber.class)
 public class Login {
@@ -22,7 +23,7 @@ public class Login {
     @Given("^User is already on login page$")
     public void user_is_already_on_login_page() throws InterruptedException {
     System.setProperty("webdriver.chrome.driver","C:\\Selenium\\chromedriver.exe"); 
-    driver = new ChromeDriver();
+    driver = new FirefoxDriver();
     Thread.sleep(3000);
     driver.get("https://www.facebook.com/");
     driver.manage().window().maximize();
