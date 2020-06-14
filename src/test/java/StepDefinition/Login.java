@@ -51,7 +51,7 @@ public class Login {
         driver.findElement(By.name("email")).sendKeys("chillara.rao@gmail.com");
         driver.findElement(By.id("pass")).sendKeys("Bindu");
     }
-
+// THIS IS A COMMENT TO SEE CHANGES
     @And("^Click on login button$")
     public void click_on_login_button() {
        driver.findElement(By.xpath("//*[@id=\"u_0_b\"]")).click();
